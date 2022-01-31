@@ -1,10 +1,10 @@
 {
-  "name": "@theflowchat/eslint-config",
+  "name": "@theflowchat/eslint",
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://git://github.com/theflowchat/eslint-config.git"
+    "url": "git://github.com/theflowchat/eslint.git"
   },
   "publishConfig": {
     "registry":"https://npm.pkg.github.com"
