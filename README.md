@@ -1,2 +1,3 @@
-# eslint
-Eslint config used in Flow.
+# ESLint
+
+ESLint config used in Flow.
