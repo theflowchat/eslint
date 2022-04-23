@@ -1,6 +1,6 @@
 {
   "name": "@theflowchat/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
-    "eslint": "8.13.0",
+    "eslint": "8.14.0",
     "prettier": "2.6.2"
   },
   "peerDependencies": {
@@ -26,7 +26,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
-    "eslint": "8.13.0",
+    "eslint": "8.14.0",
     "prettier": "2.6.2"
   }
 }
