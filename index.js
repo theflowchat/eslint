@@ -1,20 +1,16 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: 'tsconfig.json',
-    sourceType: 'module',
-  },
+  extends: [
+    'airbnb-base',
+    'airbnb-typescript/base',
+    'prettier'
+  ],
   plugins: [
-    '@typescript-eslint/eslint-plugin',
     "simple-import-sort",
     'prettier'
   ],
-  extends: [
-    'airbnb-base',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-  ],
+  parserOptions: {
+    project: './tsconfig.json',
+  },
   root: true,
   env: {
     node: true,
@@ -33,26 +29,22 @@ module.exports = {
       { "groups": [["^\\u0000"], ["^[^.]"], ["^\\."]] }
     ],
 
-    'camelcase': 'off',
-    'no-shadow': 'off',
     'no-plusplus': 'off',
     'no-console': 'error',
-    'no-underscore-dangle': 'off',
-    'no-else-return': 'off',
+    "class-methods-use-this": "off",
     'max-classes-per-file': 'off',
-    'no-useless-constructor': 'off',
-    'class-methods-use-this': 'off',
+    'no-underscore-dangle': ['error', { allowAfterThis: true }],
 
-    'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
-    'import/no-useless-path-segments': 'error',
-    'import/extensions': 'off',
-    'import/no-extraneous-dependencies': 'off',
 
-    '@typescript-eslint/no-empty-function': 'off',
-    '@typescript-eslint/interface-name-prefix': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-  },
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', ignoreRestSiblings: true }],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "variable",
+        "modifiers": ["destructured"],
+        "format": null
+      }
+    ]
+  }
 };
